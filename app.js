@@ -5,6 +5,8 @@ const fs = require('fs');
 
 var app = express();
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
+var port = process.env.PORT || 8080;
+
 app.use(express.static('public'))
 
 app.get('/', function(req, res) {
@@ -34,6 +36,6 @@ app.post('/message', urlencodedParser, function(req, res) {
 
 })
 
-var server = app.listen(8080, function() {
+var server = app.listen(port, function() {
 	console.log("Running server");
 })

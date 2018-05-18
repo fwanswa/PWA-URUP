@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nedbank Web App</title>
+
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <link rel="stylesheet" href="styles/index.css">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2F3BA2">
+</head>
+
+<body>
+
+  <header>
+    <h1>NEDBANK</h1>
+  </header>
+
+  <main>
+    <p>Welcome to Your NEDBANK MAREKETING web application! ADD IT TO YOUR HOMESCREEN NOW so we can stay in touch. Then Enable your push-notifications by clicking on the button below so we can always keep you up to date on the newest marketing methods and oppertunities for you to WIN many great prizes!</p>
+    <p>
+      <button disabled class="js-push-btn mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        Enable Push Messaging
+      </button>
+    </p>
+    <section class="subscription-details js-subscription-details is-invisible">
+      <p>Thank you, you have been added to our notification list and will recieve notifications on all the latest updates and information from your department manager.</p>
+      <p>For any queries regarding this new inissiative, please visit our commplaints site and we will be in contact <a href="http://v1.urup.com/interactions/5af43519c0d411792037c9c8">Web Application Feedback</a> </p>
+      <pre><code class="js-subscription-json"></code></pre>
+    </section>
+  </main>
+
+  <script src="scripts/main.js"></script>
+
+  <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+</body>
+</html>
